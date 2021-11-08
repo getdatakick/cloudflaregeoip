@@ -65,7 +65,7 @@ class CloudflareGeoIp extends Module
 
         // check that we not in back office
         $cookie = $this->context->cookie;
-        if (isset($cookie->id_employee)) {
+        if (defined('_PS_ADMIN_DIR_') || isset($cookie->id_employee)) {
             return;
         }
 
