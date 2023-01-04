@@ -32,7 +32,7 @@ class CloudflareGeoIp extends Module
         $this->name = 'cloudflaregeoip';
         $this->tab = 'back_office_features';
         $this->author = 'datakick';
-        $this->version = '1.0.0';
+        $this->version = '1.1.0';
         $this->need_instance = 0;
         $this->bootstrap = true;
         parent::__construct();
